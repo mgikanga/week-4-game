@@ -52,7 +52,7 @@ $(document).ready(function () {
     $(".gems").click(function () {
         var value = Number($(this).val());
         myCounter += value;
-        $("#yourscore").text("Total Score: " + myCounter);
+        $("#yourscore").text("Eggs Collected: " + myCounter);
         console.log("this is the count" + myCounter);
 
         // compare the targer number and the counter
@@ -60,6 +60,7 @@ $(document).ready(function () {
         if (myCounter === theNumber) {
             wins++;
             $("#winning").text("Wins: " + wins);
+            $("#eggy").append('<img src="assets/images/egg.png"/>');
             reset();
         }
         // when user goes above the target value
@@ -77,7 +78,7 @@ $(document).ready(function () {
         value2();
         value3();
         value4();
-        var myCounter = 0;
+         myCounter = 0;
         $("#yourscore").text("Total Score: " + myCounter);
     };
 

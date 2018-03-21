@@ -17,24 +17,31 @@ padding-left: 2%;
     margin: 8px;
 }
 #numb{
-  text-align: start;
-    padding: 7%;
-    background-color: mediumspringgreen;
-   font-size: 175%;
-    
+    color: blue;
+  text-align: center;
+ 
+  padding-bottom: 14%;
+  background-image: url("../images/counter.jpg");
+   font-size: 200%;  
 }
 #score{
-    padding:2% 6% 8% 1%;
-    background-color: lightblue;
-    margin-left: 5%;
+    padding:2% 6% 10% 1%;
+  background-color: lightblue;
     width: 15%;
+
     font-size: 18px;
     text-align: left;
 }
 #yourscore{
-    background-color:lightcoral;
-    padding: 25%;
+    background-image: url("../images/target.jpg");
+   padding: 18%;
+   font-size: 200%;  
 }
-img{
-   
+
+#gem{
+  margin-top: 1%;
+   background-color: white;
+
 }
+
+ 
