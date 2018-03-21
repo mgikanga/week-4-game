@@ -23,37 +23,60 @@ $(document).ready(function () {
     // generate the random value of the gems
     var min = 1;
     var max = 12;
-    button1 = Math.floor(Math.random() * (max - min + 1) + min);
-    $("#gem1").val(button1);
-    console.log(button1);
-     button2 = Math.floor(Math.random() * (max - min + 1) + min);
-     $("#gem2").val(button2);
-    console.log(button2);
-     button3 = Math.floor(Math.random() * (max - min + 1) + min);
-     $("#gem3").val(button3);
-     console.log(button3);
-     button4= Math.floor(Math.random() * (max - min + 1) + min);
-     $("#gem4").val(button4);
-     console.log(button4);
-    
+    function value1() {
+        button1 = Math.floor(Math.random() * (max - min + 1) + min);
+        $("#gem1").val(button1);
+        console.log(button1);
+    }
+    value1();
+    function value2() {
+        button2 = Math.floor(Math.random() * (max - min + 1) + min);
+        $("#gem2").val(button2);
+        console.log(button2);
+    }
+    value2();
+    function value3() {
+        button3 = Math.floor(Math.random() * (max - min + 1) + min);
+        $("#gem3").val(button3);
+        console.log(button3);
+    }
+    value3();
+    function value4() {
+        button4 = Math.floor(Math.random() * (max - min + 1) + min);
+        $("#gem4").val(button4);
+        console.log(button4);
+    }
+    value4();
     //on click add the numbers
+    // add up the value for every click
     $(".gems").click(function () {
+        var value = Number($(this).val());
         myCounter += value;
         $("#yourscore").text("Total Score: " + myCounter);
+        console.log("this is the count" + myCounter);
+
         // compare the targer number and the counter
+        // when the user gets the target number
         if (myCounter === theNumber) {
             wins++;
-            $("#winnig").text("Wins: " + wins);
-
+            $("#winning").text("Wins: " + wins);
+            reset();
         }
-        // add up the value for every click
-        //var totalScore += num1; 
-        //console.log(value);
+        // when user goes above the target value
+        if (myCounter > theNumber) {
+            losses++;
+            $("#losing").text("Loss: " + losses);
+            reset();
+            console.log(theNumber);
+        }
     });
 
-    var reset = function () {
-        var wins = 0;
-        var losses = 0;
+      function  reset () {
+        numb();
+        value1();
+        value2();
+        value3();
+        value4();
         var myCounter = 0;
     };
 
