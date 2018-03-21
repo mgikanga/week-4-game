@@ -16,33 +16,33 @@ $(document).ready(function () {
     function numb() {
         theNumber = Math.floor(Math.random() * (max - min + 1) + min);
         console.log(theNumber);
+        $("#numb").text("Target: " + theNumber);
     }
     numb();
-    $("#numb").text("Target: " + theNumber);
+    
 
     // generate the random value of the gems
-    var min = 1;
-    var max = 12;
+    
     function value1() {
-        button1 = Math.floor(Math.random() * (max - min + 1) + min);
+        button1 = Math.floor(Math.random() * 12);
         $("#gem1").val(button1);
         console.log(button1);
     }
     value1();
     function value2() {
-        button2 = Math.floor(Math.random() * (max - min + 1) + min);
+        button2 = Math.floor(Math.random() * 12);
         $("#gem2").val(button2);
         console.log(button2);
     }
     value2();
     function value3() {
-        button3 = Math.floor(Math.random() * (max - min + 1) + min);
+        button3 = Math.floor(Math.random() * 12);
         $("#gem3").val(button3);
         console.log(button3);
     }
     value3();
     function value4() {
-        button4 = Math.floor(Math.random() * (max - min + 1) + min);
+        button4 = Math.floor(Math.random() * 12);
         $("#gem4").val(button4);
         console.log(button4);
     }
@@ -78,6 +78,7 @@ $(document).ready(function () {
         value3();
         value4();
         var myCounter = 0;
+        $("#yourscore").text("Total Score: " + myCounter);
     };
 
 });

@@ -1,26 +1,16 @@
 body{
     background-image: url("../images/back.jpg");
 }
-#game{
-    width: 70%;
-    margin: auto;
-    margin-top: 2%;
-}
-h1{
-    background-color: mediumaquamarine;
-    text-align: center;
-    padding: 2%;
-    font-size: 28px;
-    margin-bottom: 1px;
-    font-family: 'Shrikhand', cursive;
-    color: purple;
-  
+#banner{
+    margin: 0;
 }
 p{
     background-color: pink;
     font-size: 16px;
     line-height: 150%;
     padding:2px;
+    color: green;
+padding-left: 2%;
 }
 #para{
     padding:2px;
@@ -46,6 +36,5 @@ p{
     padding: 25%;
 }
 img{
-    margin: 2%;
-    padding: 2%;
+   
 }
