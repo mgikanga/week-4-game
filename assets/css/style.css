@@ -1,0 +1,51 @@
+body{
+    background-image: url("../images/back.jpg");
+}
+#game{
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+}
+h1{
+    background-color: mediumaquamarine;
+    text-align: center;
+    padding: 2%;
+    font-size: 28px;
+    margin-bottom: 1px;
+    font-family: 'Shrikhand', cursive;
+    color: purple;
+  
+}
+p{
+    background-color: pink;
+    font-size: 16px;
+    line-height: 150%;
+    padding:2px;
+}
+#para{
+    padding:2px;
+    margin: 8px;
+}
+#numb{
+  text-align: start;
+    padding: 7%;
+    background-color: mediumspringgreen;
+   font-size: 175%;
+    
+}
+#score{
+    padding:2% 6% 8% 1%;
+    background-color: lightblue;
+    margin-left: 5%;
+    width: 15%;
+    font-size: 18px;
+    text-align: left;
+}
+#yourscore{
+    background-color:lightcoral;
+    padding: 25%;
+}
+img{
+    margin: 2%;
+    padding: 2%;
+}
