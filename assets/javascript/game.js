@@ -24,25 +24,33 @@ $(document).ready(function () {
     // generate the random value of the gems
     
     function value1() {
-        button1 = Math.floor(Math.random() * 12);
+        var min = 1;
+    var max = 12;
+        button1 =Math.floor(Math.random() * (max - min + 1) + min);
         $("#gem1").val(button1);
         console.log(button1);
     }
     value1();
     function value2() {
-        button2 = Math.floor(Math.random() * 12);
+        var min = 1;
+        var max = 12;
+        button2 = Math.floor(Math.random() * (max - min + 1) + min);
         $("#gem2").val(button2);
         console.log(button2);
     }
     value2();
     function value3() {
-        button3 = Math.floor(Math.random() * 12);
+        var min = 1;
+        var max = 12;
+        button3 = Math.floor(Math.random() * (max - min + 1) + min);
         $("#gem3").val(button3);
         console.log(button3);
     }
     value3();
     function value4() {
-        button4 = Math.floor(Math.random() * 12);
+        var min = 1;
+        var max = 12;
+        button4 = Math.floor(Math.random() * (max - min + 1) + min);
         $("#gem4").val(button4);
         console.log(button4);
     }
@@ -74,6 +82,7 @@ $(document).ready(function () {
     $(".btn").click(function () {
         wins = 0;
         $("#winning").text("Wins: " + wins);
+        $("#eggy").hide();
         losses = 0;
         $("#losing").text("Loss: " + losses);
         numb();

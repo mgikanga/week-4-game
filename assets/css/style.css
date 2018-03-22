@@ -30,13 +30,12 @@ padding-left: 2%;
 #numb{
     color: blue;
   text-align: center;
- 
   padding-bottom: 14%;
   background-image: url("../images/counter.jpg");
    font-size: 200%;  
 }
 #score{
-    padding:2% 6% 10% 1%;
+    padding:2% 8% 6% 2%;
   background-color: lightblue;
     width: 15%;
 color: orange;
