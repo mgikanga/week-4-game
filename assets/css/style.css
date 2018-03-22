@@ -1,6 +1,17 @@
 body{
     background-image: url("../images/back.jpg");
 }
+h1{
+    font-size: 34px;
+    text-align: center;
+    color: red;
+    font-family: 'Limelight', cursive;
+    padding:0 0 18% 20%;
+    background-image: url("../images/Ebanner.jpg");
+}
+.btn{
+    margin-top: 40%;
+}
 #banner{
     margin: 0;
 }
@@ -28,7 +39,7 @@ padding-left: 2%;
     padding:2% 6% 10% 1%;
   background-color: lightblue;
     width: 15%;
-
+color: orange;
     font-size: 18px;
     text-align: left;
 }
@@ -36,6 +47,7 @@ padding-left: 2%;
     background-image: url("../images/target.jpg");
    padding: 18%;
    font-size: 200%;  
+   color: purple;
 }
 
 #gem{

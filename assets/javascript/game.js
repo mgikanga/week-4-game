@@ -71,6 +71,19 @@ $(document).ready(function () {
             console.log(theNumber);
         }
     });
+    $(".btn").click(function () {
+        wins = 0;
+        $("#winning").text("Wins: " + wins);
+        losses = 0;
+        $("#losing").text("Loss: " + losses);
+        numb();
+        value1();
+        value2();
+        value3();
+        value4();
+         myCounter = 0;
+        $("#yourscore").text("Total Score: " + myCounter);
+    });
 
       function  reset () {
         numb();
